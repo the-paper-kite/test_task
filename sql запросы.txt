@@ -1,0 +1,21 @@
+SELECT *
+FROM Заказчики з
+FULL OUTER JOIN Города г
+ON з.Код_города = г.Код
+
+
+SELECT * 
+FROM Заказчики з
+LEFT JOIN Города г
+ON з.Код_города = г.Код
+
+
+SELECT *
+FROM Заказчики з
+RIGHT JON Города г
+On з.Код_города = г.Код
+
+
+
+SELECT *
+FROM Заказчики з, Города г WHERE з.Код_города = г.Код
